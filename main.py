@@ -340,3 +340,124 @@
 #         max_ = n
 #     n = int(input())
 # print(f'{max_ = }')
+
+
+# SEMINAR 6
+
+# Задача №39. Решение в группах
+# Даны два массива чисел. Требуется вывести те элементы
+# первого массива (в том порядке, в каком они идут в первом
+# массиве), которых нет во втором массиве. Пользователь вводит
+# число N - количество элементов в первом массиве, затем N
+# чисел - элементы массива. Затем число M - количество
+# элементов во втором массиве. Затем элементы второго массива
+# Ввод: Вывод:
+# 7 3 3 2 12
+# 3 1 3 4 2 4 12
+# 6
+# 4 15 43 1 15 1 (каждое число вводится с новой строки)
+# num_1 = int(input('Введите количество элементов в первом массиве: '))
+# list_1 = list()
+
+# решение 1:
+
+# for i in range(num_1):
+#     x = int(input('введите элемент массива: '))
+#     list_1.append(x)
+# print(list_1)
+# num_2 = int(input('Введите количество элементов во втором массиве: '))
+# list_2 = list()
+
+# for i in range(num_2):
+#     x = int(input('введите элемент массива: '))
+#     list_2.append(x)
+# print(list_2)
+# list_new = list()
+
+# def result (list_1, list_2, list_new):
+#     for i in list_1:
+#         if i not in list_2:
+#             list_new.append(i)
+# # for j in list_2:
+# # if i == j:
+# # list_new.append(i)
+
+#     return list_new
+
+# print(result(list_1, list_2, list_new))
+
+
+# решение 2:
+# a = [int(input()) for i in range(int(input()))]
+# b = [int(input()) for j in range(int(input()))]
+# c = [i for i in a if i not in b]
+# c_1 = []
+# for i in a:
+#     if i not in b:
+#         c_1.append(i)
+# print(c, c_1)
+
+
+# Задача №41. Решение в группах
+# Дан массив, состоящий из целых чисел. Напишите
+# программу, которая в данном массиве определит
+# количество элементов, у которых два соседних и, при
+# этом, оба соседних элемента меньше данного. Сначала
+# вводится число N — количество элементов в массиве
+# Далее записаны N чисел — элементы массива. Массив
+# состоит из целых чисел.
+# Ввод: Ввод:
+# 5 5
+# 1 2 3 4 5 1 5 1 5 1
+# Вывод: Вывод:
+# 0 2
+# (каждое число вводится с новой строки)
+
+# решение 1:
+
+# num_1 = int(input('Введите количество элементов в первом массиве: '))
+# list = list()
+
+# for i in range(num_1):
+#     x = int(input('введите элемент массива: '))
+#     list.append(x)  
+# print(list)
+
+# count = 0
+# # 0 1 2 3 4
+# def summ (list, count): # [ 6 5 1 5 1]
+#     for i in range(1, len(list)-1):
+#         if list[i-1]<list[i]>list[i+1]:
+#             count +=1
+
+#     return count
+
+# print(summ(list, count))
+
+
+# num_1 = int(input('Введите количество элементов в первом массиве: '))
+# list = list()
+
+# for i in range(num_1):
+#     x = int(input('введите элемент массива: '))
+#     list.append(x)
+# print(list)
+
+# count = 0
+# # 0 1 2 3 4 5 6
+# def para (list, count): # [ 1 2 3 2 3 2 2]
+#     for i in range(len(list)):
+#         for j in range(i+1, len(list)):
+#             if list[i] == list[j]:
+#                 count +=1
+#         return count
+
+# print(para(list, count))
+
+#  решение 2:
+# a = [int(input()) for i in range (int(input()))]
+# count = 0
+# for i in range(1, len(a) - 1):
+#     if a[i - 1] < a[i] > a[i + 1]:
+#         count+=1
+# print(count)
