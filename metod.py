@@ -36,3 +36,42 @@ min(list): возвращает наименьший элемент списка
 
 max(list): возвращает наибольший элемент списка
 
+
+# a[a.index(b)] = remove(b, text)
+    # with open('book.txt', 'w', encoding = 'utf-8') as f: #для вывода русского языка encoding = 'utf-8'
+    # f.write('\n'.join(a))
+
+# def del_memb(data):
+#     ''' удаление по имени и фамилии'''
+#     member = ' '.join(map(str.lower, [input('имя > '), input('фамилия > ')]))
+#     for i,obj in enumerate(data):
+#         if obj.identifier() == member:
+#             data.pop(i)
+#             savedata(data,name) # перезаписываем файл c новыми данными
+#             print('удалено')
+#             return
+    
+# def edited(text: str) -> str:
+#     fio = input (' Введите новые фио: ')
+#     num = input (' Введите новый номер телефона: ')
+#     if len(fio) == 0:
+#         fio = text.split(' |')[0]
+#     if len(num) == 0:
+#         fio = text.split(' |')[1]
+#     return f'{fio} | {num}'
+
+# def remove(text:str, remove_text: str) -> str:
+#     if remove_text.isaipha():
+#         num = text.split(' |')[1]
+#         return f' | {num}'
+#     else:
+#         fio = text.split(' |')[0]
+#         return f'{fio} | '
+
+
+
+
+
+
+
+
