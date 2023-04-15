@@ -615,7 +615,62 @@
 # стоящие на главной диагонали (имеющие равные индексы со списком и индексом)
 # val[indx] = 0
 # all[indx] = 0
-a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-for ind, val in enumerate(a):
-    val[ind] = 0
-print(ind, val)
+# a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# for ind, val in enumerate(a):
+#     val[ind] = 0
+# print(ind, val)
+
+
+
+
+
+# Семинар 10
+
+# class Human:# класс - это структура данных, к-ая определяет поведение объекта класса
+#     def __init__(self, name, age, color):# магическая функция__init__,  self - функция, остальное - это аргументы класса (или переменные)
+#         self.name = name #атрибуты класса
+#         self.age = age
+#         self.color = color
+#         self.hand = True
+#     def say_hello(self, message): #методы для работы с классами
+#         print(f"ПРивет, меня зовут {self.name}, мне {self.age}, у меня есть руки {self.hand}, я {self.color}, у меня для тебя новость: {message}")
+
+#     def __eq__(self, other):
+#         if type(other) == Human:
+#             if self.age == other.age:
+#                 return "они одногодки"
+#             else:
+#                 return "у них разный возраст"
+#         if type(other) == int:
+#             return "человек - не цифра"
+    
+#     def __add__(self, other):
+#         return other.age + self.age
+    
+#     def __str__(self): # возвращает обычное написанное имя, а не набор знаков
+#         return self.name
+
+
+# Ivan = Human('Ivan', 37, 'green')
+# Max = Human('Max', 34, 'blue')
+# # Ivan.say_hello()
+# # Max.say_hello()
+# # print(Ivan.name, Ivan.age, Ivan.color)
+# # print(Max.name, Max.age, Max.color)
+# # print(type(Ivan))
+# # print(type(5))
+
+# # print(Ivan == 5)
+# # print(Ivan == Max)
+# # print (Ivan + Max)
+# # print(Ivan)
+# Ivan.say_hello("йя робот") # вывод на принт для функции say_hello
+
+a = 5
+b = a
+a = "trt"
+a = 8
+print(a)
+print(b)
+
+
