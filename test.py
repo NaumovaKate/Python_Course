@@ -16,3 +16,7 @@ data.loc[data['whoAmI']=='human', ['robot']]=0
 data.loc[data['whoAmI']=='robot', ['robot']]=1
 data.loc[data['whoAmI']=='robot', ['human']]=0
 print(data)
+
+
+# data = pd.DataFrame(random.sample(['robot', 'human']*10, 20) , whoAmI={'1st'})
+# print()

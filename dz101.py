@@ -9,10 +9,6 @@ lst += ['human'] * 10
 random.shuffle(lst)
 data = pd.DataFrame({'whoAmI':lst})
 data.head()
-
-# data = pd.DataFrame(random.sample(['robot', 'human']*10, 20) , whoAmI={'1st'})
-# print()
-
 data['human'] = ['']*20
 data['robot'] = ['']*20
 data.loc[data['whoAmI']=='human', ['human']]=1
